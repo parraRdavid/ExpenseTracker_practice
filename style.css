@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 50px;
+  margin: 20px;
+}
+
+.mobileContainer {
+  width: 700px; /* Width of the container */
+  height: 800px; /* Height of the container */
+  background-color: white;
+  border-radius: 20px; /* Rounded corners for the mobile frame */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for a mobile effect */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Start aligning elements from the top */
+  align-items: center; /* Horizontally center items */
+  gap: 20px; /* Space between elements */
+  overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+.total-spent-container {
+  background-color: #f1f2f7;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 50px;
+}
+.total-spent-value {
+  color: #545ae8;
+  font-size: 36px;
+}
+
+.expense-input-section {
+  background-color: #f1f2f7;
+  width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensure the button is below the inputs */
+  gap: 10px; /* Add space between rows */
+}
+
+.expense-input-row {
+  display: flex; /* Align labels and inputs in a row */
+  justify-content: space-between;
+  gap: 20px; /* Space between type and amount inputs */
+  align-items: center;
+}
+
+.textField-inputs {
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px;
+  width: 150px; /* Fixed width for inputs */
+}
+
+.addButton-Edit {
+  background-color: #545ae8; /* Button background color */
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px; /* Button padding */
+  border: none;
+  border-radius: 50px;
+  width: 100px; /* Set width for the button */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.list-of-expenses-container {
+  width: 700px;
+  display: flex; /* Enable flexbox */
+  justify-content: flex-start; /* Align the cards to the start */
+  align-items: flex-start; /* Align items at the top of the container */
+  flex-direction: column; /* Stack the cards vertically */
+  gap: 10px; /* Space between the cards */
+  overflow-y: auto; /* Allow scrolling when content overflows */
+  max-height: 400px; /* Limit the height to allow scrolling */
+}
+
+.expense-card {
+  background-color: #f1f2f7;
+  width: 600px; /* Width of the card */
+  display: flex;
+  justify-content: space-between; /* Space out the type and amount */
+  align-items: center; /* Vertically center the items */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  margin-bottom: 10px; /* Add space between cards */
+}
+
+.expense-type {
+  font-weight: bold;
+}
+
+.expense-amount {
+  color: #545ae8;
+  font-size: 25px;
+}
+
+.delete-button {
+  background-color: #545ae8; /* Button background color */
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+}

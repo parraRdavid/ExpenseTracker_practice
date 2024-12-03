@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="mobileContainer">
+      <div class="total-spent-container">
+        <p class="total-spent-label">Total spent:</p>
+        <label id="totalAmount" class="total-spent-value"></label>
+      </div>
+
+      <div class="expense-input-section">
+        <div class="expense-input-row">
+          <label class="input-amount-label">Type: </label>
+          <input class="textField-inputs" id="expense-input-type" />
+          <label class="input-amount-label">Amount: </label>
+          <input class="textField-inputs" id="expense-input-amount" />
+        </div>
+        <button class="addButton-Edit" id="add-expense-button">Add</button>
+      </div>
+
+      <div class="list-of-expenses-container"></div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
